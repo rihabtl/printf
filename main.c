@@ -13,6 +13,7 @@ int main(void)
     int len2;
     unsigned int ui;
     void *addr;
+    char str[] = "hi! im zahra";
 
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
@@ -38,7 +39,14 @@ int main(void)
     len2 = printf("Percent:[%%]\n");
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
-    _printf("%K\n");
-    _printf(NULL);
+    _printf("%!\n");
+    _printf("%%\n");
+    _printf("chi haja:%%\n");
+    _printf("%");
+    _printf("% ");
+    _printf(str);
+    _printf("\n");
+    _printf("%s%c%c%c%s%%%s%c","loading",'.','.','.',"99","please wait",'\n');
+    printf("%s%c%c%c%s%%%s%c","loading",'.','.','.',"99","please wait",'\n');
     return (0);
 }
