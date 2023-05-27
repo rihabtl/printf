@@ -9,6 +9,7 @@
  */
 int main(void)
 {
+	int n;
     int len;
     int len2;
     unsigned int ui;
@@ -39,7 +40,12 @@ int main(void)
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
-    printf("Unknown:[%r]\n");
     _printf(str);
+    n = _printf("DZEKO YOHIBO STRANGER\n");
+    printf("%d\n", n);
+    len = _printf("String:[%s]\n", "I am a string !");
+    len2 =printf("String:[%s]\n", "I am a string !");
+    len =printf("Len:[%d]\n", len);
+    len2 =printf("Len:[%d]\n", len2);
     return (0);
 }
