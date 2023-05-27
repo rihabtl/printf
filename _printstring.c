@@ -13,7 +13,8 @@ int put_string(const char *str)
 
 	if (str == NULL)
 	{
-		return (0);
+		put_string("(null)");
+		return (6);
 	}
 	while (*(str + i) != '\0')
 	{
