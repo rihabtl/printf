@@ -48,5 +48,12 @@ int main(void)
     _printf("\n");
     _printf("%s%c%c%c%s%%%s%c","loading",'.','.','.',"99","please wait",'\n');
     printf("%s%c%c%c%s%%%s%c","loading",'.','.','.',"99","please wait",'\n');
+    _printf("css%ccs%scscscs\n",'T',"Test");
+    printf("css%ccs%scscscs\n",'T',"Test");
+    _printf("A char inside a sentence:  %c.Dit it work?\n",'F');
+    printf("A char inside a sentence:  %c.Dit it work?\n",'F');
+    _printf("let's se if the cast is correctly done: %c.did it work?\n",48);
+    printf("let's se if the cast is correctly done: %c.did it work?\n",48);
+
     return (0);
 }
