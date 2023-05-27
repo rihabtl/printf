@@ -29,5 +29,12 @@ _putchar('%');
 (*counter)++;
 break;
 }
+default:
+{
+_putchar('%');
+_putchar(specifier);
+(*counter) += 2;
+break;
+}
 }
 }
