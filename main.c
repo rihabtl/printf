@@ -40,5 +40,8 @@ printf("%s", "this sentence is retrieved from va_arg!\n");
 _printf("salam ana rihab: you %s nothing, rihab zwina.\n", (char *)0);
 _printf("%c%cth %s%s a%cg%s: y%sou %s no%ching%s snow.%c",
 		'W', 'i', "some", "more", 'r', "s", "", "know", 't', ",zahra", '\n');
+_printf("man gcc:\n%s", str);
+_printf(NULL);
+_printf("%c", '\0');
 return (0);
 }
