@@ -54,6 +54,15 @@ int main(void)
     printf("A char inside a sentence:  %c.Dit it work?\n",'F');
     _printf("let's se if the cast is correctly done: %c.did it work?\n",48);
     printf("let's se if the cast is correctly done: %c.did it work?\n",48);
+    _printf("%s", "this sentence is retrieved from va_arg!\n");
+    printf("%s", "this sentence is retrieved from va_arg!\n");
+    _printf("complete this sentence : you %s nothing, Jon snow.\n","know");
+    printf("complete this sentence : you %s nothing, Jon snow.\n","know");
+    _printf("salam ana rihab: you %s nothing, rihab zwina.\n", (char *)0);
+    printf("salam ana rihab: you %s nothing, rihab zwina.\n", (char *)0);
+    _printf("%c%cth %s%s a%cg%s: y%sou %s no%ching%s snow.%c",'W','i',"some","more",'r',"s","","know",'t',",zahra",'\n');
+    printf("%c%cth %s%s a%cg%s: y%sou %s no%ching%s snow.%c",'W','i',"some","more",'r',"s","","know",'t',",zahra",'\n');
+
 
     return (0);
 }
