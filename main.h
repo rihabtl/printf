@@ -7,6 +7,6 @@
 int _putchar(char c);
 void handle_format(va_list, char specifier, int *counter);
 int _printf(const char *format, ...);
-int _putstring(const *str );
+int put_string(const char *str);
 
 #endif

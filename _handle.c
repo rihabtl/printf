@@ -19,11 +19,11 @@ break;
 }
 case 's':
 {
-_putstring(va_arg(arg, char *));
+put_string(va_arg(arg, char *));
 (*counter)++;
 break;
 }
-case '%'
+case '%':
 {
 _putchar('%');
 (*counter)++;

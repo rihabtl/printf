@@ -7,9 +7,9 @@
  */
 int _printf(const char *format, ...)
 {
+int counter = 0;
 va_list arg;
 va_start(arg, format);
-int counter = 0;
 if (!format || ((format[0] == '%' && !format[1]) ||
 (format[0] == '%' && format[1] == ' ' && !format[2])))
 {
