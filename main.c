@@ -39,7 +39,8 @@ int main(void)
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
-    printf("Unknown:[%r]\n");
     _printf(str);
+    len = _printf("Let'see if the cast is correctly done: %c. Did it work?\n", 48);
+    _printf("%-1\n");
     return (0);
 }

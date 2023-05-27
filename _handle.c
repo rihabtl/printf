@@ -19,8 +19,7 @@ void handle_format(va_list arg, char specifier, int *counter)
 			}
 		case 's':
 			{
-				put_string(va_arg(arg, char *));
-				(*counter)++;
+				counter += put_string(va_arg(arg, char *));
 				break;
 			}
 		case '%':
