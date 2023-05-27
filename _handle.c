@@ -13,17 +13,14 @@ void handle_format(va_list arg, char specifier, int *counter)
 	{
 		case 'c':
 			{
-				_putchar(va_arg(arg, int));
-				(*counter)++;
+				(*counter) += _putchar(va_arg(arg, int));
 				break;
 			}
 		case 's':
 			{
-<<<<<<< HEAD
 				(*counter) += put_string(va_arg(arg, char *));
-=======
+
 				counter += put_string(va_arg(arg, char *));
->>>>>>> b2d4d0a70790c6bdaaddd78e523490c5bd03c14d
 				break;
 			}
 		case '%':

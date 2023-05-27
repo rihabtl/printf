@@ -28,29 +28,26 @@ int main(void)
     _printf("Unsigned octal:[%o]\n", ui);
     printf("Unsigned octal:[%o]\n", ui);
     _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-    printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-    _printf("Character:[%c]\n", 'H');
-    printf("Character:[%c]\n", 'H');
-    _printf("String:[%s]\n", "I am a string !");
-    printf("String:[%s]\n", "I am a string !");
-    _printf("Address:[%p]\n", addr);
-    printf("Address:[%p]\n", addr);
-    len = _printf("Percent:[%%]\n");
-    len2 = printf("Percent:[%%]\n");
-    _printf("Len:[%d]\n", len);
-    printf("Len:[%d]\n", len2);
-    _printf("Unknown:[%r]\n");
-    _printf(str);
-<<<<<<< HEAD
-    n = _printf("DZEKO YOHIBO STRANGER\n");
-    printf("%d\n", n);
-    len = _printf("String:[%s]\n", "I am a string !");
-    len2 =printf("String:[%s]\n", "I am a string !");
-    len =printf("Len:[%d]\n", len);
-    len2 =printf("Len:[%d]\n", len2);
-=======
-    len = _printf("Let'see if the cast is correctly done: %c. Did it work?\n", 48);
-    _printf("%-1\n");
->>>>>>> b2d4d0a70790c6bdaaddd78e523490c5bd03c14d
-    return (0);
+printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+_printf("Character:[%c]\n", 'H');
+printf("Character:[%c]\n", 'H');
+_printf("String:[%s]\n", "I am a string !");
+printf("String:[%s]\n", "I am a string !");
+_printf("Address:[%p]\n", addr);
+printf("Address:[%p]\n", addr);
+len = _printf("Percent:[%%]\n");
+len2 = printf("Percent:[%%]\n");
+_printf("Len:[%d]\n", len);
+printf("Len:[%d]\n", len2);
+_printf("Unknown:[%r]\n");
+_printf(str);
+n = _printf("DZEKO YOHIBO STRANGER\n");
+printf("%d\n", n);
+len = _printf("String:[%s]\n", "I am a string !");
+len2 =printf("String:[%s]\n", "I am a string !");
+len =printf("Len:[%d]\n", len);
+len2 =printf("Len:[%d]\n", len2);
+len = _printf("Let'see if the cast is correctly done: %c. Did it work?\n", 48);
+_printf("%-1\n");
+return (0);
 }
