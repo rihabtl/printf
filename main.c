@@ -43,5 +43,6 @@ _printf("%c%cth %s%s a%cg%s: y%sou %s no%ching%s snow.%c",
 _printf("man gcc:\n%s", str);
 _printf(NULL);
 _printf("%c", '\0');
+printf("%c\n", '\0');
 return (0);
 }
