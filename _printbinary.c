@@ -12,7 +12,7 @@ int print_binary(unsigned int n)
 	if (n == 0)
 	{
 		_putchar('0');
-		counter++;
+		return (1);
 	}
 	else
 	{
