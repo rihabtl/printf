@@ -9,14 +9,18 @@
 int print_binary(unsigned int n)
 {
 	int counter = 0;
+
 	if (n == 0)
 	{
 		_putchar('0');
-		return (1);
+		counter++;
 	}
 	else
 	{
-		print_binary(n / 2);
+		if (n > 1)
+		{
+			counter += print_binary(n / 2);
+		}
 		_putchar('0' + (n % 2));
 		counter++;
 	}
