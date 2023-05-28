@@ -50,5 +50,8 @@ _printf("%-1\n");
 _printf("%i\n",567);
 _printf("%d\n",345);
  _printf("%b\n", 98);
+ _printf("%b\n", 2653623);
+ _printf("%b\n", 1);
+ _printf("%b\n", 0);
 return (0);
 }
