@@ -8,5 +8,7 @@ int _putchar(char c);
 void handle_format(va_list, char specifier, int *counter);
 int _printf(const char *format, ...);
 int put_string(const char *str);
+int print_integer((char specifier, va_list var);
+void print_number(int n);
 
 #endif
