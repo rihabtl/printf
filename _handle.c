@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
  * handle_format - handles different specifiers
  * @counter: the counter
  * @specifier: the specifier
  * @arg: argument
  */
-
 void handle_format(va_list arg, char specifier, int *counter)
 {
 	switch (specifier)
@@ -30,6 +28,11 @@ void handle_format(va_list arg, char specifier, int *counter)
 		case 'd':
 			{
 				(*counter) += print_number(va_arg(arg, int));
+				break;
+			}
+		case 'b':
+			{
+				(*counter) += print_binary(va_arg(arg, unsigned int));
 				break;
 			}
 		default:

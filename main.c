@@ -48,6 +48,7 @@ len2 =printf("Len:[%d]\n", len2);
 len = _printf("wach khdmat: %c. gul lya?\n", 48);
 _printf("%-1\n");
 _printf("%i\n",567);
-_printf("%d",345);
+_printf("%d\n",345);
+ _printf("%b\n", 98);
 return (0);
 }
