@@ -14,7 +14,6 @@ int main(void)
     int len2;
     unsigned int ui;
     void *addr;
-    char *str = "When you invoke GCC , it normally does preprocessing, compilation, assembly and linking. The \"overall options\" allow you to stop this process at an intermediate stage. For example, the -c option says not to run the linker. Then the output consists of object files output by the assembler.\n\nOther options are passed on to one stage of processing. Some options control the preprocessor and others the compiler itself. Yet other options control the assembler and linker";
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
     ui = (unsigned int)INT_MAX + 1024;
@@ -40,14 +39,15 @@ len2 = printf("Percent:[%%]\n");
 _printf("Len:[%d]\n", len);
 printf("Len:[%d]\n", len2);
 _printf("Unknown:[%r]\n");
-_printf(str);
 n = _printf("DZEKO YOHIBO STRANGER\n");
 printf("%d\n", n);
-len = _printf("String:[%s]\n", "I am a string !");
-len2 =printf("String:[%s]\n", "I am a string !");
+len = _printf("[%s]\n", "hi hi hi");
+len2 =printf("[%s]\n", "hi hi hi");
 len =printf("Len:[%d]\n", len);
 len2 =printf("Len:[%d]\n", len2);
-len = _printf("Let'see if the cast is correctly done: %c. Did it work?\n", 48);
+len = _printf("wach khdmat: %c. gul lya?\n", 48);
 _printf("%-1\n");
+_printf("%i\n",567);
+_printf("%d",345);
 return (0);
 }

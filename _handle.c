@@ -26,6 +26,12 @@ void handle_format(va_list arg, char specifier, int *counter)
 				(*counter) += _putchar('%');
 				break;
 			}
+		case 'i':
+		case 'd':
+			{
+				(*counter) += print_number(va_arg(arg, int));
+				break;
+			}
 		default:
 			{
 				_putchar('%');
