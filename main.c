@@ -49,5 +49,7 @@ len =printf("Len:[%d]\n", len);
 len2 =printf("Len:[%d]\n", len2);
 len = _printf("Let'see if the cast is correctly done: %c. Did it work?\n", 48);
 _printf("%-1\n");
+_printf("%i\n",567);
+_printf("%d",345);
 return (0);
 }
